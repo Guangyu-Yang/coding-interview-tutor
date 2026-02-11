@@ -26,7 +26,25 @@ For every problem, the tutor walks you through:
 
 ### Importing Company-Specific Problems from LeetCode
 
-LeetCode's company-tagged problem pages require premium login and can't be accessed by the tutor directly. To load company-specific problems:
+#### Option 1: Direct Access via Chrome (Recommended)
+
+The tutor can directly access LeetCode company pages through Chrome browser automation. This requires you to be logged into LeetCode in Chrome with a premium account.
+
+To enable this, start Claude Code with the `--chrome` flag:
+
+```bash
+claude --chrome
+```
+
+Then simply ask the tutor to fetch problems from a company page, e.g.:
+- "Fetch Airbnb problems from LeetCode"
+- "Get me the Google 6-month problem list from LeetCode"
+
+The tutor will navigate to the page in Chrome, extract the problem list, and save them to your private problem bank automatically.
+
+#### Option 2: Manual Import
+
+If you don't have Chrome access enabled or prefer manual import:
 
 1. **Screenshot**: Take a screenshot of the LeetCode company page and share the file path
 2. **Copy-paste**: Select the problem table on the page and paste it into the chat
@@ -37,7 +55,7 @@ The tutor will parse the problems, save them to your private problem bank, and l
 ## Getting Started
 
 1. Clone this repo
-2. Open it in Claude Code
+2. Start Claude Code with Chrome access: `claude --chrome`
 3. Say "let's practice" or "give me a problem"
 
 ## Problem Categories

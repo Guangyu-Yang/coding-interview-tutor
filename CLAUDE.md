@@ -215,27 +215,37 @@ When the student wants to practice for a specific company:
 - Prioritize frequently asked problems
 - If no preference saved, ask and save to `/profile/preferences.md`
 
-**IMPORTANT - LeetCode Access Limitation**: The tutor **cannot** directly access LeetCode's company-specific pages (e.g., `leetcode.com/company/airbnb/`) because they require premium login and block automated access. When the student wants company-specific problems that aren't in the local problem bank:
+**LeetCode Access via Chrome Browser**: When Claude Code is launched with `claude --chrome`, the tutor can directly access LeetCode's company-specific pages (e.g., `leetcode.com/company/airbnb/`) through Chrome browser automation. This requires the student to be logged into LeetCode in Chrome with a premium account.
 
-1. **Ask the student to provide the problem list** using one of these methods:
+**When Chrome access is available** (i.e., browser automation tools like `mcp__claude-in-chrome__*` are present):
+
+1. **Navigate directly** to the LeetCode company page using Chrome browser tools
+2. **Read the page** to extract problem names, numbers, difficulty levels, and acceptance rates
+3. **Parse and save**: Save all extracted problems to `/private-problems/{company}/` with individual markdown files per problem
+4. **Confirm**: Show the student the extracted list and let them pick or say "random"
+
+**When Chrome access is NOT available** (fallback):
+
+If browser tools are not available, ask the student to provide the problem list using one of these methods:
    - **Screenshot**: Take a screenshot of the LeetCode company page and share the file path. The tutor can read images and extract problem names, numbers, and difficulty levels.
    - **Copy-paste**: Select the problem table on the LeetCode page and paste the text directly into the chat. Even messy formatting works - the tutor will parse it.
    - **PDF/Doc**: Save the page as a PDF and share the file path.
 
-2. **Parse and save**: Extract all problems from the student's input and save them to `/private-problems/{company}/` with individual markdown files per problem.
+Then:
+1. **Parse and save**: Extract all problems from the student's input and save them to `/private-problems/{company}/` with individual markdown files per problem.
+2. **Confirm**: Show the student the extracted list and let them pick or say "random".
 
-3. **Confirm**: Show the student the extracted list and let them pick or say "random".
-
-Example prompt when company problems aren't available locally:
+Example prompt when Chrome is not available:
 ```
-I can't directly access LeetCode's company pages (they require premium login).
-Could you help me out? Any of these works:
+I don't have Chrome browser access in this session. To access LeetCode company pages,
+restart with: claude --chrome
 
+Alternatively, you can share the problem list manually:
 1. **Screenshot** the problem list and share the file path
 2. **Copy-paste** the problem table from the page
 3. **Save as PDF** and share the file path
 
-I'll parse everything and save it to your private Airbnb problem bank!
+I'll parse everything and save it to your private problem bank!
 ```
 
 ### Custom Problems (Imported by Student)
