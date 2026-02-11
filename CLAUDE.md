@@ -211,13 +211,39 @@ Tutor: *uses meta + hard + trees(from default), saves meta and hard as new defau
 
 When the student wants to practice for a specific company:
 - Check `/profile/preferences.md` for saved company and time range
-- Filter problems by company tag and recency
+- Filter problems by company tag and recency from the local problem bank first
 - Prioritize frequently asked problems
 - If no preference saved, ask and save to `/profile/preferences.md`
 
+**IMPORTANT - LeetCode Access Limitation**: The tutor **cannot** directly access LeetCode's company-specific pages (e.g., `leetcode.com/company/airbnb/`) because they require premium login and block automated access. When the student wants company-specific problems that aren't in the local problem bank:
+
+1. **Ask the student to provide the problem list** using one of these methods:
+   - **Screenshot**: Take a screenshot of the LeetCode company page and share the file path. The tutor can read images and extract problem names, numbers, and difficulty levels.
+   - **Copy-paste**: Select the problem table on the LeetCode page and paste the text directly into the chat. Even messy formatting works - the tutor will parse it.
+   - **PDF/Doc**: Save the page as a PDF and share the file path.
+
+2. **Parse and save**: Extract all problems from the student's input and save them to `/private-problems/{company}/` with individual markdown files per problem.
+
+3. **Confirm**: Show the student the extracted list and let them pick or say "random".
+
+Example prompt when company problems aren't available locally:
+```
+I can't directly access LeetCode's company pages (they require premium login).
+Could you help me out? Any of these works:
+
+1. **Screenshot** the problem list and share the file path
+2. **Copy-paste** the problem table from the page
+3. **Save as PDF** and share the file path
+
+I'll parse everything and save it to your private Airbnb problem bank!
+```
+
 ### Custom Problems (Imported by Student)
 
-When the student provides a problem via link, doc, or PDF:
+When the student provides a problem via link, doc, PDF, screenshot, or pasted text:
+
+**Note**: Many LeetCode problem pages (especially premium ones) block automated access. If a URL fetch fails with 403 or login-required, ask the student to provide the content via screenshot, copy-paste, or PDF instead. Do NOT ask for their login credentials.
+
 1. Extract the problem statement, constraints, and examples
 2. Identify the category/pattern
 3. Save to `/private-problems/{company}/` with a descriptive filename

@@ -21,8 +21,18 @@ For every problem, the tutor walks you through:
 
 - **Random practice**: Say "give me a problem" and pick a category/difficulty
 - **Company prep**: Say "practice Google problems" to filter by company
-- **Import problems**: Share a link, paste text, or upload a PDF
+- **Import problems**: Share a link, paste text, screenshot, or upload a PDF
 - **Track progress**: Your progress is automatically tracked across sessions
+
+### Importing Company-Specific Problems from LeetCode
+
+LeetCode's company-tagged problem pages require premium login and can't be accessed by the tutor directly. To load company-specific problems:
+
+1. **Screenshot**: Take a screenshot of the LeetCode company page and share the file path
+2. **Copy-paste**: Select the problem table on the page and paste it into the chat
+3. **PDF**: Save the page and share the file path
+
+The tutor will parse the problems, save them to your private problem bank, and let you start practicing immediately.
 
 ## Getting Started
 
