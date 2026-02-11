@@ -124,50 +124,88 @@ After implementation:
 
 ## Problem Selection
 
-### Random Problem
+### Pre-Sampling Questionnaire
 
-When the student asks for a random problem (e.g., "give me a problem", "quiz me", "let's practice"):
+**EVERY TIME** before sampling a problem, present the student with a quick preference check. Read `/profile/preferences.md` to show their current defaults, then ask all three questions together:
 
-**Step 1**: Ask category preference (or pick randomly):
 ```
-Which category would you like to practice? (or say "random" for a surprise)
+Before I pick a problem, let me check your preferences:
 
-1. Arrays & Hashing
-2. Two Pointers
-3. Sliding Window
-4. Stack
-5. Binary Search
-6. Linked List
-7. Trees
-8. Tries
-9. Heap / Priority Queue
-10. Backtracking
-11. Graphs
-12. Dynamic Programming
-13. Greedy
-14. Intervals
-15. Math & Geometry
-16. Bit Manipulation
-17. Sorting & Searching
+**Your current defaults**: [Company: {default}] | [Difficulty: {default}] | [Category: {default}]
 
-Reply with a number, category name, or "random"
+1. **Company**: Which company's questions?
+   → Type a company name (e.g., "google", "meta", "amazon") or "any" for all companies
+   → Current default: {from preferences.md}
+
+2. **Difficulty**: What difficulty level?
+   → "easy", "medium", "hard", or "any"
+   → Current default: {from preferences.md}
+
+3. **Category**: Which algorithm pattern?
+   → Type a category (e.g., "trees", "dynamic-programming") or "any"
+   → Current default: {from preferences.md}
+
+**Quick options:**
+→ Type "default" or "d" to use all your saved defaults
+→ Type "random" or "r" for completely random selection
+→ Or answer each one, e.g., "google, medium, any"
 ```
 
-**Step 2**: Ask difficulty preference:
+**Processing the response:**
+- If student says **"default"** or **"d"**: Use all values from `/profile/preferences.md` `[Default Problem Settings]` section
+- If student says **"random"** or **"r"**: Set all three to "any" (fully random)
+- If student provides **partial answers** (e.g., "google, medium"): Use given values for specified fields, fill the rest from defaults
+- If student provides **comma-separated values** (e.g., "meta, hard, graphs"): Parse as company, difficulty, category in order
+- If student provides **a single value**: Infer which field it applies to (company name → company, easy/medium/hard → difficulty, pattern name → category), use defaults for the rest
+
+**After receiving the response:**
+1. **Save any new preferences** to `/profile/preferences.md` under `[Default Problem Settings]` if the student explicitly changes a default
+2. **Select a problem** from `/problems/problem-bank.json` matching the filters
+3. **Present the problem** and begin Phase 1
+
+### Default Problem Settings Behavior
+
+The defaults system works as follows:
+- **First session**: All defaults are "any" (no filter). After the student answers the questionnaire for the first time, save their choices as the new defaults.
+- **Subsequent sessions**: Show saved defaults. Student can say "default" to reuse, or override any/all fields.
+- **Updating defaults**: Whenever the student provides new preferences, update `/profile/preferences.md`. Only update fields the student explicitly changed.
+- **"any" is a valid default**: If the student prefers randomness for a field, save "any" as the default for that field.
+
+### Example Interactions
+
+**First time:**
 ```
-What difficulty level?
+Student: "give me a problem"
+Tutor: "Before I pick a problem, let me check your preferences:
 
-1. Easy - Great for warming up and building confidence
-2. Medium - The sweet spot for most interviews
-3. Hard - Challenge mode for top-tier companies
-4. Random - Let me surprise you
+Your current defaults: [Company: any] | [Difficulty: any] | [Category: any]
 
-Reply with a number or "random"
+1. Company: Which company's questions? (or "any")
+2. Difficulty: easy / medium / hard / any?
+3. Category: Which pattern? (or "any")
+
+Type "default" for saved defaults, "random" for fully random, or answer like "google, medium, any""
+
+Student: "google, medium, trees"
+Tutor: *saves defaults, picks a Google-tagged Medium Trees problem*
 ```
 
-**Step 3**: Select a problem from `/problems/` based on their choices. If they have company preferences in `/profile/preferences.md`, prioritize problems tagged with those companies.
+**Returning student:**
+```
+Student: "let's practice"
+Tutor: "Your current defaults: [Company: google] | [Difficulty: medium] | [Category: trees]
 
-**Step 4**: Present the problem and begin Phase 1.
+Type "default" to use these, "random" for surprise, or specify changes."
+
+Student: "default"
+Tutor: *picks a Google-tagged Medium Trees problem*
+```
+
+**Partial override:**
+```
+Student: "meta, hard"
+Tutor: *uses meta + hard + trees(from default), saves meta and hard as new defaults*
+```
 
 ### Company-Specific Practice
 
