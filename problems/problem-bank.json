@@ -1,0 +1,1769 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "totalProblems": 174,
+    "lastUpdated": "2026-02-10",
+    "categories": [
+      "arrays-hashing",
+      "two-pointers",
+      "sliding-window",
+      "stack",
+      "binary-search",
+      "linked-list",
+      "trees",
+      "tries",
+      "heap-priority-queue",
+      "backtracking",
+      "graphs",
+      "dynamic-programming",
+      "greedy",
+      "intervals",
+      "math-geometry",
+      "bit-manipulation",
+      "sorting-searching"
+    ],
+    "curatedLists": ["blind-75", "neetcode-150", "top-100-liked"]
+  },
+  "problems": [
+    {
+      "id": 1,
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "category": "arrays-hashing",
+      "companies": ["google", "amazon", "meta", "apple", "microsoft", "bloomberg", "uber", "adobe"],
+      "url": "https://leetcode.com/problems/two-sum/",
+      "pattern": "hash-map-lookup",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 49,
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["amazon", "meta", "google", "bloomberg", "microsoft"],
+      "url": "https://leetcode.com/problems/group-anagrams/",
+      "pattern": "hash-map-grouping",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 242,
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "category": "arrays-hashing",
+      "companies": ["amazon", "microsoft", "google", "bloomberg"],
+      "url": "https://leetcode.com/problems/valid-anagram/",
+      "pattern": "frequency-count",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 217,
+      "title": "Contains Duplicate",
+      "difficulty": "Easy",
+      "category": "arrays-hashing",
+      "companies": ["amazon", "apple", "microsoft", "google"],
+      "url": "https://leetcode.com/problems/contains-duplicate/",
+      "pattern": "hash-set",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 347,
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["amazon", "meta", "google", "microsoft", "apple", "bloomberg"],
+      "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+      "pattern": "bucket-sort",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 238,
+      "title": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["amazon", "meta", "apple", "microsoft", "google", "bloomberg", "uber"],
+      "url": "https://leetcode.com/problems/product-of-array-except-self/",
+      "pattern": "prefix-suffix",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 271,
+      "title": "Encode and Decode Strings",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["google", "meta", "amazon", "linkedin"],
+      "url": "https://leetcode.com/problems/encode-and-decode-strings/",
+      "pattern": "string-encoding",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 128,
+      "title": "Longest Consecutive Sequence",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["google", "amazon", "meta", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+      "pattern": "hash-set-sequence",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 36,
+      "title": "Valid Sudoku",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["amazon", "apple", "microsoft", "uber"],
+      "url": "https://leetcode.com/problems/valid-sudoku/",
+      "pattern": "hash-set-validation",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 560,
+      "title": "Subarray Sum Equals K",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["meta", "google", "amazon", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
+      "pattern": "prefix-sum-hash-map",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 953,
+      "title": "Verifying an Alien Dictionary",
+      "difficulty": "Easy",
+      "category": "arrays-hashing",
+      "companies": ["meta", "amazon"],
+      "url": "https://leetcode.com/problems/verifying-an-alien-dictionary/",
+      "pattern": "hash-map-lookup",
+      "tags": []
+    },
+    {
+      "id": 380,
+      "title": "Insert Delete GetRandom O(1)",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg", "uber", "linkedin"],
+      "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+      "pattern": "hash-map-array-swap",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 659,
+      "title": "Longest Substring with At Most Two Distinct Characters",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["google", "meta", "amazon"],
+      "url": "https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/",
+      "pattern": "hash-map-window",
+      "tags": []
+    },
+    {
+      "id": 125,
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "category": "two-pointers",
+      "companies": ["meta", "microsoft", "amazon", "google"],
+      "url": "https://leetcode.com/problems/valid-palindrome/",
+      "pattern": "two-pointer-inward",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 167,
+      "title": "Two Sum II - Input Array Is Sorted",
+      "difficulty": "Medium",
+      "category": "two-pointers",
+      "companies": ["amazon", "bloomberg", "microsoft"],
+      "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+      "pattern": "two-pointer-inward",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 15,
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "category": "two-pointers",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg", "apple", "uber"],
+      "url": "https://leetcode.com/problems/3sum/",
+      "pattern": "two-pointer-sorted",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 11,
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "category": "two-pointers",
+      "companies": ["amazon", "google", "meta", "bloomberg", "microsoft"],
+      "url": "https://leetcode.com/problems/container-with-most-water/",
+      "pattern": "two-pointer-greedy",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 42,
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "category": "two-pointers",
+      "companies": ["amazon", "google", "meta", "microsoft", "bloomberg", "apple", "goldman-sachs"],
+      "url": "https://leetcode.com/problems/trapping-rain-water/",
+      "pattern": "two-pointer-max-tracking",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 283,
+      "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "category": "two-pointers",
+      "companies": ["meta", "amazon", "apple", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/move-zeroes/",
+      "pattern": "two-pointer-partition",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 680,
+      "title": "Valid Palindrome II",
+      "difficulty": "Easy",
+      "category": "two-pointers",
+      "companies": ["meta", "amazon", "microsoft"],
+      "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+      "pattern": "two-pointer-skip",
+      "tags": []
+    },
+    {
+      "id": 3,
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "category": "sliding-window",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple", "uber"],
+      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "pattern": "variable-window",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 121,
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "category": "sliding-window",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple", "goldman-sachs"],
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      "pattern": "min-tracking-window",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 424,
+      "title": "Longest Repeating Character Replacement",
+      "difficulty": "Medium",
+      "category": "sliding-window",
+      "companies": ["google", "amazon", "microsoft"],
+      "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+      "pattern": "variable-window-frequency",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 76,
+      "title": "Minimum Window Substring",
+      "difficulty": "Hard",
+      "category": "sliding-window",
+      "companies": ["meta", "amazon", "google", "microsoft", "linkedin", "uber", "airbnb"],
+      "url": "https://leetcode.com/problems/minimum-window-substring/",
+      "pattern": "variable-window-shrink",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 567,
+      "title": "Permutation in String",
+      "difficulty": "Medium",
+      "category": "sliding-window",
+      "companies": ["microsoft", "amazon", "google"],
+      "url": "https://leetcode.com/problems/permutation-in-string/",
+      "pattern": "fixed-window-anagram",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 239,
+      "title": "Sliding Window Maximum",
+      "difficulty": "Hard",
+      "category": "sliding-window",
+      "companies": ["amazon", "google", "meta", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/sliding-window-maximum/",
+      "pattern": "monotonic-deque-window",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 438,
+      "title": "Find All Anagrams in a String",
+      "difficulty": "Medium",
+      "category": "sliding-window",
+      "companies": ["amazon", "meta", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+      "pattern": "fixed-window-anagram",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 20,
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "category": "stack",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple"],
+      "url": "https://leetcode.com/problems/valid-parentheses/",
+      "pattern": "stack-matching",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 155,
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "category": "stack",
+      "companies": ["amazon", "microsoft", "bloomberg", "google"],
+      "url": "https://leetcode.com/problems/min-stack/",
+      "pattern": "auxiliary-stack",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 150,
+      "title": "Evaluate Reverse Polish Notation",
+      "difficulty": "Medium",
+      "category": "stack",
+      "companies": ["amazon", "linkedin", "microsoft"],
+      "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+      "pattern": "stack-evaluation",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 22,
+      "title": "Generate Parentheses",
+      "difficulty": "Medium",
+      "category": "stack",
+      "companies": ["amazon", "google", "meta", "microsoft", "bloomberg", "uber"],
+      "url": "https://leetcode.com/problems/generate-parentheses/",
+      "pattern": "stack-recursion",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 739,
+      "title": "Daily Temperatures",
+      "difficulty": "Medium",
+      "category": "stack",
+      "companies": ["amazon", "meta", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/daily-temperatures/",
+      "pattern": "monotonic-stack",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 853,
+      "title": "Car Fleet",
+      "difficulty": "Medium",
+      "category": "stack",
+      "companies": ["google", "amazon"],
+      "url": "https://leetcode.com/problems/car-fleet/",
+      "pattern": "monotonic-stack-merge",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 84,
+      "title": "Largest Rectangle in Histogram",
+      "difficulty": "Hard",
+      "category": "stack",
+      "companies": ["amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+      "pattern": "monotonic-stack",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 704,
+      "title": "Binary Search",
+      "difficulty": "Easy",
+      "category": "binary-search",
+      "companies": ["amazon", "microsoft", "google", "apple"],
+      "url": "https://leetcode.com/problems/binary-search/",
+      "pattern": "standard-binary-search",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 33,
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "category": "binary-search",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg", "uber", "linkedin"],
+      "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+      "pattern": "modified-binary-search",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 153,
+      "title": "Find Minimum in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "category": "binary-search",
+      "companies": ["amazon", "microsoft", "google", "meta", "bloomberg"],
+      "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+      "pattern": "modified-binary-search",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 875,
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "category": "binary-search",
+      "companies": ["google", "amazon", "meta"],
+      "url": "https://leetcode.com/problems/koko-eating-bananas/",
+      "pattern": "binary-search-on-answer",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 981,
+      "title": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "category": "binary-search",
+      "companies": ["google", "amazon", "netflix", "uber"],
+      "url": "https://leetcode.com/problems/time-based-key-value-store/",
+      "pattern": "binary-search-upper-bound",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 4,
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "category": "binary-search",
+      "companies": ["amazon", "google", "meta", "microsoft", "apple", "goldman-sachs"],
+      "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+      "pattern": "binary-search-partition",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 74,
+      "title": "Search a 2D Matrix",
+      "difficulty": "Medium",
+      "category": "binary-search",
+      "companies": ["amazon", "microsoft", "meta", "bloomberg"],
+      "url": "https://leetcode.com/problems/search-a-2d-matrix/",
+      "pattern": "flattened-binary-search",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 34,
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "difficulty": "Medium",
+      "category": "binary-search",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+      "pattern": "binary-search-bounds",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 206,
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "category": "linked-list",
+      "companies": ["amazon", "microsoft", "google", "meta", "apple", "bloomberg"],
+      "url": "https://leetcode.com/problems/reverse-linked-list/",
+      "pattern": "iterative-reversal",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 21,
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "category": "linked-list",
+      "companies": ["amazon", "microsoft", "google", "meta", "apple", "bloomberg"],
+      "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+      "pattern": "merge-two-pointers",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 143,
+      "title": "Reorder List",
+      "difficulty": "Medium",
+      "category": "linked-list",
+      "companies": ["amazon", "meta", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/reorder-list/",
+      "pattern": "find-mid-reverse-merge",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 19,
+      "title": "Remove Nth Node From End of List",
+      "difficulty": "Medium",
+      "category": "linked-list",
+      "companies": ["meta", "amazon", "google", "microsoft", "apple"],
+      "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+      "pattern": "two-pointer-gap",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 138,
+      "title": "Copy List with Random Pointer",
+      "difficulty": "Medium",
+      "category": "linked-list",
+      "companies": ["amazon", "meta", "microsoft", "bloomberg", "google"],
+      "url": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+      "pattern": "hash-map-clone",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 2,
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "category": "linked-list",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple"],
+      "url": "https://leetcode.com/problems/add-two-numbers/",
+      "pattern": "carry-addition",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 141,
+      "title": "Linked List Cycle",
+      "difficulty": "Easy",
+      "category": "linked-list",
+      "companies": ["amazon", "microsoft", "google", "meta", "bloomberg"],
+      "url": "https://leetcode.com/problems/linked-list-cycle/",
+      "pattern": "fast-slow-pointers",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 287,
+      "title": "Find the Duplicate Number",
+      "difficulty": "Medium",
+      "category": "linked-list",
+      "companies": ["amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/find-the-duplicate-number/",
+      "pattern": "fast-slow-pointers",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 23,
+      "title": "Merge k Sorted Lists",
+      "difficulty": "Hard",
+      "category": "linked-list",
+      "companies": ["amazon", "meta", "google", "microsoft", "apple", "bloomberg", "uber"],
+      "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+      "pattern": "divide-and-conquer-merge",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 25,
+      "title": "Reverse Nodes in k-Group",
+      "difficulty": "Hard",
+      "category": "linked-list",
+      "companies": ["amazon", "meta", "microsoft", "google"],
+      "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+      "pattern": "group-reversal",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 146,
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "category": "linked-list",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple", "uber", "linkedin", "tiktok"],
+      "url": "https://leetcode.com/problems/lru-cache/",
+      "pattern": "doubly-linked-list-hash-map",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 226,
+      "title": "Invert Binary Tree",
+      "difficulty": "Easy",
+      "category": "trees",
+      "companies": ["google", "amazon", "meta", "microsoft"],
+      "url": "https://leetcode.com/problems/invert-binary-tree/",
+      "pattern": "dfs-recursive",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 104,
+      "title": "Maximum Depth of Binary Tree",
+      "difficulty": "Easy",
+      "category": "trees",
+      "companies": ["amazon", "google", "microsoft", "apple", "linkedin"],
+      "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "pattern": "dfs-recursive",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 543,
+      "title": "Diameter of Binary Tree",
+      "difficulty": "Easy",
+      "category": "trees",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/diameter-of-binary-tree/",
+      "pattern": "dfs-height-tracking",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 110,
+      "title": "Balanced Binary Tree",
+      "difficulty": "Easy",
+      "category": "trees",
+      "companies": ["amazon", "google", "bloomberg"],
+      "url": "https://leetcode.com/problems/balanced-binary-tree/",
+      "pattern": "dfs-height-check",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 100,
+      "title": "Same Tree",
+      "difficulty": "Easy",
+      "category": "trees",
+      "companies": ["amazon", "microsoft", "google", "bloomberg"],
+      "url": "https://leetcode.com/problems/same-tree/",
+      "pattern": "dfs-comparison",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 572,
+      "title": "Subtree of Another Tree",
+      "difficulty": "Easy",
+      "category": "trees",
+      "companies": ["amazon", "meta", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/subtree-of-another-tree/",
+      "pattern": "dfs-comparison",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 235,
+      "title": "Lowest Common Ancestor of a Binary Search Tree",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["meta", "amazon", "google", "microsoft", "linkedin"],
+      "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+      "pattern": "bst-property-traversal",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 236,
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["meta", "amazon", "google", "microsoft", "apple", "linkedin"],
+      "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+      "pattern": "dfs-backtracking",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 102,
+      "title": "Binary Tree Level Order Traversal",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple"],
+      "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+      "pattern": "bfs-traversal",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 199,
+      "title": "Binary Tree Right Side View",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+      "pattern": "bfs-traversal",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 1448,
+      "title": "Count Good Nodes in Binary Tree",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["amazon", "microsoft", "google"],
+      "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+      "pattern": "dfs-max-tracking",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 98,
+      "title": "Validate Binary Search Tree",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/validate-binary-search-tree/",
+      "pattern": "dfs-range-validation",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 230,
+      "title": "Kth Smallest Element in a BST",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["amazon", "meta", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+      "pattern": "inorder-traversal",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 105,
+      "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+      "pattern": "recursive-construction",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 124,
+      "title": "Binary Tree Maximum Path Sum",
+      "difficulty": "Hard",
+      "category": "trees",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+      "pattern": "dfs-max-gain",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 297,
+      "title": "Serialize and Deserialize Binary Tree",
+      "difficulty": "Hard",
+      "category": "trees",
+      "companies": ["meta", "amazon", "google", "microsoft", "linkedin", "uber"],
+      "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+      "pattern": "dfs-serialization",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 116,
+      "title": "Populating Next Right Pointers in Each Node",
+      "difficulty": "Medium",
+      "category": "trees",
+      "companies": ["meta", "amazon", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/",
+      "pattern": "bfs-level-linking",
+      "tags": []
+    },
+    {
+      "id": 208,
+      "title": "Implement Trie (Prefix Tree)",
+      "difficulty": "Medium",
+      "category": "tries",
+      "companies": ["amazon", "google", "microsoft", "meta", "bloomberg"],
+      "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+      "pattern": "trie-basic",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 211,
+      "title": "Design Add and Search Words Data Structure",
+      "difficulty": "Medium",
+      "category": "tries",
+      "companies": ["meta", "amazon", "google"],
+      "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+      "pattern": "trie-dfs",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 212,
+      "title": "Word Search II",
+      "difficulty": "Hard",
+      "category": "tries",
+      "companies": ["amazon", "google", "microsoft", "meta", "uber", "airbnb"],
+      "url": "https://leetcode.com/problems/word-search-ii/",
+      "pattern": "trie-backtracking",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 14,
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "category": "tries",
+      "companies": ["amazon", "google", "meta", "apple"],
+      "url": "https://leetcode.com/problems/longest-common-prefix/",
+      "pattern": "trie-prefix-match",
+      "tags": []
+    },
+    {
+      "id": 588,
+      "title": "Design In-Memory File System",
+      "difficulty": "Hard",
+      "category": "tries",
+      "companies": ["amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/design-in-memory-file-system/",
+      "pattern": "trie-filesystem",
+      "tags": []
+    },
+    {
+      "id": 295,
+      "title": "Find Median from Data Stream",
+      "difficulty": "Hard",
+      "category": "heap-priority-queue",
+      "companies": ["amazon", "google", "meta", "microsoft", "apple", "bloomberg"],
+      "url": "https://leetcode.com/problems/find-median-from-data-stream/",
+      "pattern": "two-heaps",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 215,
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "category": "heap-priority-queue",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg", "linkedin"],
+      "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+      "pattern": "min-heap-top-k",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 621,
+      "title": "Task Scheduler",
+      "difficulty": "Medium",
+      "category": "heap-priority-queue",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/task-scheduler/",
+      "pattern": "max-heap-greedy",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 355,
+      "title": "Design Twitter",
+      "difficulty": "Medium",
+      "category": "heap-priority-queue",
+      "companies": ["amazon", "twitter"],
+      "url": "https://leetcode.com/problems/design-twitter/",
+      "pattern": "merge-k-sorted-heap",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 973,
+      "title": "K Closest Points to Origin",
+      "difficulty": "Medium",
+      "category": "heap-priority-queue",
+      "companies": ["amazon", "meta", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+      "pattern": "max-heap-top-k",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 1046,
+      "title": "Last Stone Weight",
+      "difficulty": "Easy",
+      "category": "heap-priority-queue",
+      "companies": ["amazon", "google"],
+      "url": "https://leetcode.com/problems/last-stone-weight/",
+      "pattern": "max-heap-simulation",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 703,
+      "title": "Kth Largest Element in a Stream",
+      "difficulty": "Easy",
+      "category": "heap-priority-queue",
+      "companies": ["amazon", "meta", "google"],
+      "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+      "pattern": "min-heap-stream",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 78,
+      "title": "Subsets",
+      "difficulty": "Medium",
+      "category": "backtracking",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/subsets/",
+      "pattern": "subset-generation",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 39,
+      "title": "Combination Sum",
+      "difficulty": "Medium",
+      "category": "backtracking",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/combination-sum/",
+      "pattern": "combination-with-repetition",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 46,
+      "title": "Permutations",
+      "difficulty": "Medium",
+      "category": "backtracking",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/permutations/",
+      "pattern": "permutation-generation",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 90,
+      "title": "Subsets II",
+      "difficulty": "Medium",
+      "category": "backtracking",
+      "companies": ["amazon", "meta", "bloomberg"],
+      "url": "https://leetcode.com/problems/subsets-ii/",
+      "pattern": "subset-dedup",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 40,
+      "title": "Combination Sum II",
+      "difficulty": "Medium",
+      "category": "backtracking",
+      "companies": ["amazon", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/combination-sum-ii/",
+      "pattern": "combination-dedup",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 79,
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "category": "backtracking",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/word-search/",
+      "pattern": "grid-backtracking",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 131,
+      "title": "Palindrome Partitioning",
+      "difficulty": "Medium",
+      "category": "backtracking",
+      "companies": ["amazon", "google", "bloomberg"],
+      "url": "https://leetcode.com/problems/palindrome-partitioning/",
+      "pattern": "partition-backtracking",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 51,
+      "title": "N-Queens",
+      "difficulty": "Hard",
+      "category": "backtracking",
+      "companies": ["amazon", "google", "meta", "microsoft"],
+      "url": "https://leetcode.com/problems/n-queens/",
+      "pattern": "constraint-backtracking",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 17,
+      "title": "Letter Combinations of a Phone Number",
+      "difficulty": "Medium",
+      "category": "backtracking",
+      "companies": ["amazon", "meta", "google", "microsoft", "uber"],
+      "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+      "pattern": "combination-mapping",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 200,
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple", "uber"],
+      "url": "https://leetcode.com/problems/number-of-islands/",
+      "pattern": "dfs-grid-traversal",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 133,
+      "title": "Clone Graph",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/clone-graph/",
+      "pattern": "dfs-clone",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 417,
+      "title": "Pacific Atlantic Water Flow",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["google", "amazon", "meta"],
+      "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+      "pattern": "multi-source-dfs",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 207,
+      "title": "Course Schedule",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "tiktok"],
+      "url": "https://leetcode.com/problems/course-schedule/",
+      "pattern": "topological-sort",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 210,
+      "title": "Course Schedule II",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["amazon", "meta", "google", "microsoft", "tiktok"],
+      "url": "https://leetcode.com/problems/course-schedule-ii/",
+      "pattern": "topological-sort-ordering",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 684,
+      "title": "Redundant Connection",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["google", "amazon", "meta"],
+      "url": "https://leetcode.com/problems/redundant-connection/",
+      "pattern": "union-find",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 323,
+      "title": "Number of Connected Components in an Undirected Graph",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["google", "amazon", "meta", "linkedin"],
+      "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+      "pattern": "union-find",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 261,
+      "title": "Graph Valid Tree",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["google", "amazon", "meta", "linkedin"],
+      "url": "https://leetcode.com/problems/graph-valid-tree/",
+      "pattern": "union-find-cycle",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 127,
+      "title": "Word Ladder",
+      "difficulty": "Hard",
+      "category": "graphs",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/word-ladder/",
+      "pattern": "bfs-shortest-path",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 994,
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["amazon", "google", "microsoft", "meta"],
+      "url": "https://leetcode.com/problems/rotting-oranges/",
+      "pattern": "multi-source-bfs",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 695,
+      "title": "Max Area of Island",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["amazon", "google", "meta", "microsoft"],
+      "url": "https://leetcode.com/problems/max-area-of-island/",
+      "pattern": "dfs-grid-area",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 743,
+      "title": "Network Delay Time",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["amazon", "google"],
+      "url": "https://leetcode.com/problems/network-delay-time/",
+      "pattern": "dijkstra",
+      "tags": []
+    },
+    {
+      "id": 785,
+      "title": "Is Graph Bipartite?",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["meta", "amazon", "google"],
+      "url": "https://leetcode.com/problems/is-graph-bipartite/",
+      "pattern": "bfs-coloring",
+      "tags": []
+    },
+    {
+      "id": 269,
+      "title": "Alien Dictionary",
+      "difficulty": "Hard",
+      "category": "graphs",
+      "companies": ["meta", "amazon", "google", "microsoft", "airbnb", "uber"],
+      "url": "https://leetcode.com/problems/alien-dictionary/",
+      "pattern": "topological-sort",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 332,
+      "title": "Reconstruct Itinerary",
+      "difficulty": "Hard",
+      "category": "graphs",
+      "companies": ["google", "amazon", "uber"],
+      "url": "https://leetcode.com/problems/reconstruct-itinerary/",
+      "pattern": "eulerian-path",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 787,
+      "title": "Cheapest Flights Within K Stops",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["amazon", "google", "meta"],
+      "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+      "pattern": "bellman-ford",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 1584,
+      "title": "Min Cost to Connect All Points",
+      "difficulty": "Medium",
+      "category": "graphs",
+      "companies": ["amazon", "google"],
+      "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+      "pattern": "prim-mst",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 778,
+      "title": "Swim in Rising Water",
+      "difficulty": "Hard",
+      "category": "graphs",
+      "companies": ["google", "amazon"],
+      "url": "https://leetcode.com/problems/swim-in-rising-water/",
+      "pattern": "binary-search-bfs",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 70,
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "microsoft", "apple", "bloomberg"],
+      "url": "https://leetcode.com/problems/climbing-stairs/",
+      "pattern": "fibonacci-dp",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 746,
+      "title": "Min Cost Climbing Stairs",
+      "difficulty": "Easy",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+      "pattern": "linear-dp",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 198,
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/house-robber/",
+      "pattern": "linear-dp",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 213,
+      "title": "House Robber II",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/house-robber-ii/",
+      "pattern": "circular-dp",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 5,
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/longest-palindromic-substring/",
+      "pattern": "expand-around-center",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 647,
+      "title": "Palindromic Substrings",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["meta", "amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/palindromic-substrings/",
+      "pattern": "expand-around-center",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 91,
+      "title": "Decode Ways",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/decode-ways/",
+      "pattern": "string-dp",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 322,
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple"],
+      "url": "https://leetcode.com/problems/coin-change/",
+      "pattern": "unbounded-knapsack",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 518,
+      "title": "Coin Change II",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "meta"],
+      "url": "https://leetcode.com/problems/coin-change-ii/",
+      "pattern": "unbounded-knapsack",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 152,
+      "title": "Maximum Product Subarray",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "microsoft", "bloomberg", "linkedin"],
+      "url": "https://leetcode.com/problems/maximum-product-subarray/",
+      "pattern": "min-max-tracking",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 139,
+      "title": "Word Break",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "apple", "tiktok"],
+      "url": "https://leetcode.com/problems/word-break/",
+      "pattern": "string-dp-set",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 300,
+      "title": "Longest Increasing Subsequence",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "meta", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+      "pattern": "lis-dp",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 416,
+      "title": "Partition Equal Subset Sum",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "meta", "google"],
+      "url": "https://leetcode.com/problems/partition-equal-subset-sum/",
+      "pattern": "0-1-knapsack",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 62,
+      "title": "Unique Paths",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "meta", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/unique-paths/",
+      "pattern": "grid-dp",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 1143,
+      "title": "Longest Common Subsequence",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/longest-common-subsequence/",
+      "pattern": "two-string-dp",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 53,
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "meta", "google", "microsoft", "apple", "linkedin", "bloomberg"],
+      "url": "https://leetcode.com/problems/maximum-subarray/",
+      "pattern": "kadane-algorithm",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 72,
+      "title": "Edit Distance",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "meta", "microsoft"],
+      "url": "https://leetcode.com/problems/edit-distance/",
+      "pattern": "two-string-dp",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 494,
+      "title": "Target Sum",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["meta", "amazon", "google"],
+      "url": "https://leetcode.com/problems/target-sum/",
+      "pattern": "0-1-knapsack",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 97,
+      "title": "Interleaving String",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/interleaving-string/",
+      "pattern": "two-string-dp",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 377,
+      "title": "Combination Sum IV",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["google", "meta"],
+      "url": "https://leetcode.com/problems/combination-sum-iv/",
+      "pattern": "unbounded-knapsack",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 309,
+      "title": "Best Time to Buy and Sell Stock with Cooldown",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google"],
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+      "pattern": "state-machine-dp",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 10,
+      "title": "Regular Expression Matching",
+      "difficulty": "Hard",
+      "category": "dynamic-programming",
+      "companies": ["meta", "google", "amazon", "microsoft"],
+      "url": "https://leetcode.com/problems/regular-expression-matching/",
+      "pattern": "two-string-dp",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 312,
+      "title": "Burst Balloons",
+      "difficulty": "Hard",
+      "category": "dynamic-programming",
+      "companies": ["amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/burst-balloons/",
+      "pattern": "interval-dp",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 329,
+      "title": "Longest Increasing Path in a Matrix",
+      "difficulty": "Hard",
+      "category": "dynamic-programming",
+      "companies": ["google", "meta", "amazon", "microsoft"],
+      "url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+      "pattern": "dfs-memoization",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 115,
+      "title": "Distinct Subsequences",
+      "difficulty": "Hard",
+      "category": "dynamic-programming",
+      "companies": ["google", "amazon"],
+      "url": "https://leetcode.com/problems/distinct-subsequences/",
+      "pattern": "two-string-dp",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 256,
+      "title": "Paint House",
+      "difficulty": "Medium",
+      "category": "dynamic-programming",
+      "companies": ["linkedin", "google"],
+      "url": "https://leetcode.com/problems/paint-house/",
+      "pattern": "state-dp",
+      "tags": []
+    },
+    {
+      "id": 55,
+      "title": "Jump Game",
+      "difficulty": "Medium",
+      "category": "greedy",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/jump-game/",
+      "pattern": "greedy-reachability",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 45,
+      "title": "Jump Game II",
+      "difficulty": "Medium",
+      "category": "greedy",
+      "companies": ["amazon", "meta", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/jump-game-ii/",
+      "pattern": "greedy-bfs-level",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 134,
+      "title": "Gas Station",
+      "difficulty": "Medium",
+      "category": "greedy",
+      "companies": ["amazon", "google", "bloomberg"],
+      "url": "https://leetcode.com/problems/gas-station/",
+      "pattern": "greedy-circular",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 846,
+      "title": "Hand of Straights",
+      "difficulty": "Medium",
+      "category": "greedy",
+      "companies": ["google", "amazon"],
+      "url": "https://leetcode.com/problems/hand-of-straights/",
+      "pattern": "greedy-grouping",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 763,
+      "title": "Partition Labels",
+      "difficulty": "Medium",
+      "category": "greedy",
+      "companies": ["amazon", "google", "meta"],
+      "url": "https://leetcode.com/problems/partition-labels/",
+      "pattern": "greedy-last-occurrence",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 678,
+      "title": "Valid Parenthesis String",
+      "difficulty": "Medium",
+      "category": "greedy",
+      "companies": ["amazon", "meta", "google"],
+      "url": "https://leetcode.com/problems/valid-parenthesis-string/",
+      "pattern": "greedy-range-tracking",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 1899,
+      "title": "Merge Triplets to Form Target Triplet",
+      "difficulty": "Medium",
+      "category": "greedy",
+      "companies": ["google"],
+      "url": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/",
+      "pattern": "greedy-filtering",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 56,
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "category": "intervals",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg", "apple", "uber", "linkedin"],
+      "url": "https://leetcode.com/problems/merge-intervals/",
+      "pattern": "merge-intervals",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 57,
+      "title": "Insert Interval",
+      "difficulty": "Medium",
+      "category": "intervals",
+      "companies": ["google", "amazon", "meta", "microsoft", "linkedin"],
+      "url": "https://leetcode.com/problems/insert-interval/",
+      "pattern": "insert-merge",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 435,
+      "title": "Non-overlapping Intervals",
+      "difficulty": "Medium",
+      "category": "intervals",
+      "companies": ["amazon", "google", "meta"],
+      "url": "https://leetcode.com/problems/non-overlapping-intervals/",
+      "pattern": "interval-scheduling",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 252,
+      "title": "Meeting Rooms",
+      "difficulty": "Easy",
+      "category": "intervals",
+      "companies": ["amazon", "google", "meta", "bloomberg"],
+      "url": "https://leetcode.com/problems/meeting-rooms/",
+      "pattern": "interval-overlap-check",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 253,
+      "title": "Meeting Rooms II",
+      "difficulty": "Medium",
+      "category": "intervals",
+      "companies": ["amazon", "meta", "google", "microsoft", "bloomberg", "uber"],
+      "url": "https://leetcode.com/problems/meeting-rooms-ii/",
+      "pattern": "sweep-line",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 1851,
+      "title": "Minimum Interval to Include Each Query",
+      "difficulty": "Hard",
+      "category": "intervals",
+      "companies": ["google", "amazon"],
+      "url": "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
+      "pattern": "sweep-line-heap",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 48,
+      "title": "Rotate Image",
+      "difficulty": "Medium",
+      "category": "math-geometry",
+      "companies": ["amazon", "meta", "google", "microsoft", "apple"],
+      "url": "https://leetcode.com/problems/rotate-image/",
+      "pattern": "matrix-transpose-reverse",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 54,
+      "title": "Spiral Matrix",
+      "difficulty": "Medium",
+      "category": "math-geometry",
+      "companies": ["amazon", "meta", "google", "microsoft", "apple"],
+      "url": "https://leetcode.com/problems/spiral-matrix/",
+      "pattern": "matrix-boundary-traversal",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 73,
+      "title": "Set Matrix Zeroes",
+      "difficulty": "Medium",
+      "category": "math-geometry",
+      "companies": ["amazon", "meta", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/set-matrix-zeroes/",
+      "pattern": "in-place-marking",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 202,
+      "title": "Happy Number",
+      "difficulty": "Easy",
+      "category": "math-geometry",
+      "companies": ["amazon", "apple", "google"],
+      "url": "https://leetcode.com/problems/happy-number/",
+      "pattern": "cycle-detection",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 66,
+      "title": "Plus One",
+      "difficulty": "Easy",
+      "category": "math-geometry",
+      "companies": ["google", "amazon", "meta", "bloomberg"],
+      "url": "https://leetcode.com/problems/plus-one/",
+      "pattern": "digit-carry",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 50,
+      "title": "Pow(x, n)",
+      "difficulty": "Medium",
+      "category": "math-geometry",
+      "companies": ["meta", "amazon", "google", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/powx-n/",
+      "pattern": "fast-exponentiation",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 43,
+      "title": "Multiply Strings",
+      "difficulty": "Medium",
+      "category": "math-geometry",
+      "companies": ["meta", "amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/multiply-strings/",
+      "pattern": "digit-multiplication",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 2013,
+      "title": "Detect Squares",
+      "difficulty": "Medium",
+      "category": "math-geometry",
+      "companies": ["google"],
+      "url": "https://leetcode.com/problems/detect-squares/",
+      "pattern": "geometry-counting",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 136,
+      "title": "Single Number",
+      "difficulty": "Easy",
+      "category": "bit-manipulation",
+      "companies": ["amazon", "google", "microsoft", "apple"],
+      "url": "https://leetcode.com/problems/single-number/",
+      "pattern": "xor-cancel",
+      "tags": ["blind-75", "neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 191,
+      "title": "Number of 1 Bits",
+      "difficulty": "Easy",
+      "category": "bit-manipulation",
+      "companies": ["microsoft", "apple", "google"],
+      "url": "https://leetcode.com/problems/number-of-1-bits/",
+      "pattern": "bit-count",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 338,
+      "title": "Counting Bits",
+      "difficulty": "Easy",
+      "category": "bit-manipulation",
+      "companies": ["amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/counting-bits/",
+      "pattern": "dp-bit-count",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 190,
+      "title": "Reverse Bits",
+      "difficulty": "Easy",
+      "category": "bit-manipulation",
+      "companies": ["amazon", "apple", "microsoft"],
+      "url": "https://leetcode.com/problems/reverse-bits/",
+      "pattern": "bit-reversal",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 268,
+      "title": "Missing Number",
+      "difficulty": "Easy",
+      "category": "bit-manipulation",
+      "companies": ["amazon", "microsoft", "google", "apple"],
+      "url": "https://leetcode.com/problems/missing-number/",
+      "pattern": "xor-cancel",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 371,
+      "title": "Sum of Two Integers",
+      "difficulty": "Medium",
+      "category": "bit-manipulation",
+      "companies": ["meta", "amazon", "google"],
+      "url": "https://leetcode.com/problems/sum-of-two-integers/",
+      "pattern": "bit-addition",
+      "tags": ["blind-75", "neetcode-150"]
+    },
+    {
+      "id": 7,
+      "title": "Reverse Integer",
+      "difficulty": "Medium",
+      "category": "bit-manipulation",
+      "companies": ["amazon", "google", "meta", "bloomberg", "apple"],
+      "url": "https://leetcode.com/problems/reverse-integer/",
+      "pattern": "digit-extraction",
+      "tags": ["neetcode-150"]
+    },
+    {
+      "id": 912,
+      "title": "Sort an Array",
+      "difficulty": "Medium",
+      "category": "sorting-searching",
+      "companies": ["amazon", "microsoft", "google"],
+      "url": "https://leetcode.com/problems/sort-an-array/",
+      "pattern": "merge-sort",
+      "tags": []
+    },
+    {
+      "id": 88,
+      "title": "Merge Sorted Array",
+      "difficulty": "Easy",
+      "category": "sorting-searching",
+      "companies": ["meta", "amazon", "microsoft", "google", "bloomberg"],
+      "url": "https://leetcode.com/problems/merge-sorted-array/",
+      "pattern": "two-pointer-merge",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 75,
+      "title": "Sort Colors",
+      "difficulty": "Medium",
+      "category": "sorting-searching",
+      "companies": ["amazon", "microsoft", "meta", "google"],
+      "url": "https://leetcode.com/problems/sort-colors/",
+      "pattern": "dutch-national-flag",
+      "tags": ["neetcode-150", "top-100-liked"]
+    },
+    {
+      "id": 148,
+      "title": "Sort List",
+      "difficulty": "Medium",
+      "category": "sorting-searching",
+      "companies": ["meta", "amazon", "google", "microsoft"],
+      "url": "https://leetcode.com/problems/sort-list/",
+      "pattern": "merge-sort-linked-list",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 179,
+      "title": "Largest Number",
+      "difficulty": "Medium",
+      "category": "sorting-searching",
+      "companies": ["amazon", "google", "meta"],
+      "url": "https://leetcode.com/problems/largest-number/",
+      "pattern": "custom-comparator",
+      "tags": []
+    },
+    {
+      "id": 692,
+      "title": "Top K Frequent Words",
+      "difficulty": "Medium",
+      "category": "sorting-searching",
+      "companies": ["amazon", "google", "meta", "bloomberg"],
+      "url": "https://leetcode.com/problems/top-k-frequent-words/",
+      "pattern": "heap-sort-frequency",
+      "tags": []
+    },
+    {
+      "id": 460,
+      "title": "LFU Cache",
+      "difficulty": "Hard",
+      "category": "linked-list",
+      "companies": ["amazon", "google", "meta", "microsoft"],
+      "url": "https://leetcode.com/problems/lfu-cache/",
+      "pattern": "doubly-linked-list-frequency",
+      "tags": []
+    },
+    {
+      "id": 169,
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "category": "arrays-hashing",
+      "companies": ["amazon", "google", "microsoft", "meta", "apple"],
+      "url": "https://leetcode.com/problems/majority-element/",
+      "pattern": "boyer-moore-voting",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 41,
+      "title": "First Missing Positive",
+      "difficulty": "Hard",
+      "category": "arrays-hashing",
+      "companies": ["amazon", "google", "meta", "microsoft"],
+      "url": "https://leetcode.com/problems/first-missing-positive/",
+      "pattern": "cyclic-sort",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 31,
+      "title": "Next Permutation",
+      "difficulty": "Medium",
+      "category": "arrays-hashing",
+      "companies": ["meta", "google", "amazon", "microsoft", "bloomberg"],
+      "url": "https://leetcode.com/problems/next-permutation/",
+      "pattern": "two-pointer-swap",
+      "tags": ["top-100-liked"]
+    },
+    {
+      "id": 1249,
+      "title": "Minimum Remove to Make Valid Parentheses",
+      "difficulty": "Medium",
+      "category": "stack",
+      "companies": ["meta", "amazon", "google", "bloomberg"],
+      "url": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/",
+      "pattern": "stack-matching",
+      "tags": ["top-100-liked"]
+    }
+  ]
+}

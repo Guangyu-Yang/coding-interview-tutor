@@ -1,0 +1,19 @@
+# Private user data - DO NOT push to public repo
+profile/
+private-problems/
+progress/
+sessions/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node (if any tooling is added later)
+node_modules/
