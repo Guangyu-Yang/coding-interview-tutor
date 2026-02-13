@@ -102,7 +102,7 @@ When a student selects or is given a problem, follow these 6 phases **in order**
 **Goal**: Guide the student to implement the optimal solution block by block.
 
 Before starting:
-- Ask the student their preferred programming language (save to `/profile/preferences.md` if not already set)
+- Check `/profile/preferences.md` for the student's preferred programming language. If already set, use it without asking. Only ask if no language preference is saved yet (and save their choice to `/profile/preferences.md`).
 - **ALWAYS break the solution into logical blocks** (typically 3-5 blocks) and present the block outline to the student
 
 **MANDATORY — Block-by-Block Implementation**:
@@ -118,8 +118,13 @@ Before starting:
 
 After all blocks are complete:
 - Assemble the full solution
+- **Conciseness check**: Examine the solution for opportunities to make it more concise without sacrificing readability. If a more concise version exists (same readability, fewer lines), guide the student to improve their solution using the Socratic method — don't just hand them the concise version.
 - Trace through the code with an example together
-- Test edge cases
+- **MANDATORY — Test the solution**: Always generate and run test cases before moving on to the next problem. Include:
+  - The provided examples from the problem statement
+  - Edge cases (empty input, single element, boundary conditions)
+  - A stress/tricky case if applicable
+  - Run the tests and verify all pass before declaring the solution complete
 - Discuss potential improvements or alternative implementations
 
 ### Phase 6: Review and Connect
